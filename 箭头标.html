@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer.drop-arrow {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            bottom: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer.drop-arrow {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            bottom: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        footer.drop-arrow a {
+            padding-top: 80px;
+        }
+        footer.drop-arrow a span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            margin-left: -12px;
+            border-left: 3px solid #2E4A6B;
+            border-bottom: 3px solid #2E4A6B;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-animation: sdb07 2s infinite;
+            /*! animation: sdb07 2s infinite; */
+            opacity: 0;
+            box-sizing: border-box;
+        }
+        footer.drop-arrow.white a span {
+            border-left: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+        }
+        footer.drop-arrow a span:nth-of-type(1) {
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+        footer.drop-arrow a span:nth-of-type(2) {
+            top: 16px;
+            /*! -webkit-animation-delay: .375s; */
+            animation-delay: .375s;
+        }
+        footer.drop-arrow a span:nth-of-type(3) {
+            top: 32px;
+            -webkit-animation-delay: .75s;
+            animation-delay: .75s;
+        }
+        @-webkit-keyframes sdb07 {
+            0% {
+                /*! opacity: 0; */
+            }
+            50% {
+                /*! opacity: 1; */
+            }
+            100% {
+                /*! opacity: 0; */
+            }
+        }
+        @keyframes sdb07 {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="mastfoot mt-auto drop-arrow" title="NEXT">
+        <div class="inner">
+            <a class="a_next" href="#section-1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+
+</html>
